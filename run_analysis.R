@@ -1,4 +1,5 @@
 library(data.table)
+library(dplyr)
 ##Read in the features & activity files and label the columns.
 features <- fread("UCI HAR Dataset/features.txt", col.names = c("index", "name"))
 activity <- fread("UCI HAR Dataset/activity_labels.txt", col.names = c("activitycode","activity"))

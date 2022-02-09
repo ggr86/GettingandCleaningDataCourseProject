@@ -6,8 +6,9 @@ This is the script to produce tidy.txt
 It requires the UCI HAR Dataset which is available at the address below:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
   
-It also requires the data.table package in R which can be installed using: 
+It also requires the data.table and dplyr packages which can be installed using: 
 install.packages("data.table")
+install.packages("dplyr")
   
 The script gathers all the test and train data files and merges them into one data.table
 called merged.  It replaces the activity code with the activity labels in 
